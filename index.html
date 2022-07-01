@@ -11,3 +11,51 @@
   <link rel="stylesheet" href="./style.css">
   <title>Project Tracker</title>
 </head>
+
+<body>
+    
+<!-- This is a card for storing instructions for the project tracking site, will also link to modal form through button   --> 
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="https://lh4.googleusercontent.com/-i8QzKRuDbr0/TYC8oQ_2n5I/AAAAAAAAA-s/K0F8bKv0F0s/s1600/please+read.jpg" alt="Read Me Image">
+    <div class="card-body">
+      <h5 class="card-title">IMPORTANT: Read here for instructions!</h5>
+      <p class="card-text">Welcome to our project tracking site. Below you'll find a button that will trigger a pop up form for you to fill out. The form will ask you for various pieces of info regarding your project which will then be added to the list of projects you're currently tracking.</p>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+  </button>
+    </div>
+  </div>
+
+<!-- Button trigger modal -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+ <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Subscribe our Newsletter</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
